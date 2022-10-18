@@ -1,0 +1,17 @@
+## To edit with VS Code: 
+# git config --global core.editor code 
+# and 
+# git config --global -e
+
+[core]
+	editor = \"C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[user]
+	name = Name
+	email = E-mail
+[alias]
+	c = !git add --all && git commit -m
+	s = !git status -s
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s -- %C(cyan)%cn, %C(green)%cr'
+	lg = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	amend = !git add --all && git commit --amend --no-edit
+	count = !git shortlog -s-grep
